@@ -7,7 +7,7 @@ public class Odd
 {
     public double OddsRate { get; set; }
 
-    public string? Status { get; set; }
+    public string Status { get; set; } = default!;
 
-    public OddBetStatusProps? OddBetStatusProps { get; set; }
+    public OddBetStatusProps OddBetStatusProps { get; set; } = default!;
 }

@@ -8,7 +8,7 @@ namespace TickerViewer.API.Services;
 /// </summary>
 public class TicketgRPCService(TicketProtoService.TicketProtoServiceClient client) : ITicketService
 {
-    public async Task<IEnumerable<Shared.DTO.Ticket.Ticket>> GetActualOfferTicketsAsync()
+    public async Task<IEnumerable<Shared.DTO.Ticket.Ticket>?> GetActualOfferTicketsAsync()
     {
         var res = await client.GetActualTicketOfferAsync(new ActualTicketRequest());
 

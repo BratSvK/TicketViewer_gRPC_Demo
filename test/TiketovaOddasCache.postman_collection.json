@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "fc3f7154-96ad-4af6-9447-1193b7c8b3a7",
+		"name": "TiketovaOddasCache",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11251158"
+	},
+	"item": [
+		{
+			"name": "MicroOdd",
+			"item": [
+				{
+					"name": "GetMicroOdd",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{OddsCacheAPI}}/microOddDetail/2605871423",
+							"host": [
+								"{{OddsCacheAPI}}"
+							],
+							"path": [
+								"microOddDetail",
+								"2605871423"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CategorizationWithLabels",
+			"item": [
+				{
+					"name": "GetCategorizationOddInfo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{OddsCacheAPI}}/oddCategorization/2605871423/languageID/sk",
+							"host": [
+								"{{OddsCacheAPI}}"
+							],
+							"path": [
+								"oddCategorization",
+								"2605871423",
+								"languageID",
+								"sk"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "gRPC",
+			"item": [
+				{
+					"name": "GetMicroOdd_REST",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{TickerViewerAPI}}/api/actualTicketOffer",
+							"host": [
+								"{{TickerViewerAPI}}"
+							],
+							"path": [
+								"api",
+								"actualTicketOffer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetMicroOdd_gRPC",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{TickerViewerAPI}}/grpc/actualTicketOffer",
+							"host": [
+								"{{TickerViewerAPI}}"
+							],
+							"path": [
+								"grpc",
+								"actualTicketOffer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

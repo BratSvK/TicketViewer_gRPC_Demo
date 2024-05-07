@@ -10,7 +10,6 @@ public class TicketGrpcService : TicketProtoService.TicketProtoServiceBase
     {
         var allTickets = TicketDB.Tickets;
         IList<Ticket> tickets = new List<Ticket>();
-
         var response = allTickets.Select(t => new Ticket
         {
             TicketId = t.TickerId,
@@ -20,7 +19,7 @@ public class TicketGrpcService : TicketProtoService.TicketProtoServiceBase
                 Status = o.Status,
                 OddBetStatusProps = new OddBetStatusProps
                 {
-                    EventDate = Timestamp.FromDateTime(o.OddBetStatusProps.EventDate),
+                    EventDate = Timestamp.FromDateTime(o.OddBetStatusProps.EventDate.ToUniversalTime()),
                     LiveBetting = o.OddBetStatusProps.LiveBetting,
                     IsLiveBetActive = o.OddBetStatusProps.IsLiveBetActive,
                     IsBetActive = o.OddBetStatusProps.IsBetActive
