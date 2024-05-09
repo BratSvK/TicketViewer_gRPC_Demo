@@ -2,9 +2,9 @@
 using StreamProcessor.Bayes.Model.Settings;
 using TickerViewer.API.Interfaces;
 using TickerViewer.API.Services;
+using TickerViewer.Grpc.Shared.Protos;
 using TickerViewer.Shared.Const;
 using TickerViewer.Shared.Enum;
-using TicketOffer.API.Protos;
 
 namespace TickerViewer.API.Config;
 

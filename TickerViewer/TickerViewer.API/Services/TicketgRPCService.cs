@@ -1,5 +1,5 @@
 ﻿using TickerViewer.API.Interfaces;
-using TicketOffer.API.Protos;
+using TickerViewer.Grpc.Shared.Protos;
 
 namespace TickerViewer.API.Services;
 

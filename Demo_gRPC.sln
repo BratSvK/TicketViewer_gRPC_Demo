@@ -9,11 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TickerViewer.API", "TickerV
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TicketOffer", "TicketOffer", "{E8F7C6CF-6D97-4A4D-8C25-62C13F66B052}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketOffer.API", "TickerOffer\TicketOffer.API\TicketOffer.API.csproj", "{B7852784-84CC-49C2-BA69-06AD90E7053C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketOffer.API", "TickerOffer\TicketOffer.API\TicketOffer.API.csproj", "{B7852784-84CC-49C2-BA69-06AD90E7053C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{9A89CCD6-34E2-4C2E-A1EE-DF493F44564D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TickerViewer.Shared", "TickerViewer\TickerViewer.Shared\TickerViewer.Shared.csproj", "{EED659D1-AC22-46CC-AD13-2E41016786E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TickerViewer.Shared", "TickerViewer\TickerViewer.Shared\TickerViewer.Shared.csproj", "{EED659D1-AC22-46CC-AD13-2E41016786E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TickerViewer.Grpc.Shared", "Shared\TickerViewer.Grpc.Shared\TickerViewer.Grpc.Shared.csproj", "{F4ED14AD-80E9-4423-9A4A-ACF2195EDB57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{EED659D1-AC22-46CC-AD13-2E41016786E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EED659D1-AC22-46CC-AD13-2E41016786E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EED659D1-AC22-46CC-AD13-2E41016786E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4ED14AD-80E9-4423-9A4A-ACF2195EDB57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4ED14AD-80E9-4423-9A4A-ACF2195EDB57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4ED14AD-80E9-4423-9A4A-ACF2195EDB57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4ED14AD-80E9-4423-9A4A-ACF2195EDB57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 		{374E893C-AD4F-4E0E-A552-00E33C334CEE} = {B216C137-4AA4-4EFC-9B58-04385D642069}
 		{B7852784-84CC-49C2-BA69-06AD90E7053C} = {E8F7C6CF-6D97-4A4D-8C25-62C13F66B052}
 		{EED659D1-AC22-46CC-AD13-2E41016786E4} = {9A89CCD6-34E2-4C2E-A1EE-DF493F44564D}
+		{F4ED14AD-80E9-4423-9A4A-ACF2195EDB57} = {9A89CCD6-34E2-4C2E-A1EE-DF493F44564D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {61A4AC03-E061-4E82-A4B2-D1B3DA2134BF}

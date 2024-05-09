@@ -1,6 +1,6 @@
 ﻿using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
-using TicketOffer.API.Protos;
+using TickerViewer.Grpc.Shared.Protos;
 
 namespace TicketOffer.API.Services;
 

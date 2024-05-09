@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace = "TicketOffer.API.Protos";
+option csharp_namespace = "TickerViewer.Grpc.Shared.Protos";
 
 import "google/protobuf/timestamp.proto";
 

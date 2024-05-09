@@ -11,6 +11,7 @@
     <PackageReference Include="Grpc.AspNetCore" Version="2.62.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="TickerViewer.Grpc.Shared" Version="1.0.1" GeneratePathProperty="true" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,9 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Protobuf Include="..\..\TickerOffer\TicketOffer.API\Protos\ticketOffer.proto" GrpcServices="Client">
-      <Link>Protos\ticketOffer.proto</Link>
-    </Protobuf>
+    <Protobuf Include="$(PkgTickerViewer_Grpc_Shared)\content\Protos\ticketOffer.proto" GrpcServices="Client" />
   </ItemGroup>
-
+  
 </Project>
